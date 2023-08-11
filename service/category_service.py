@@ -10,7 +10,7 @@ class CategoryService:
     return self.__category_dao
    
   def menu(self):
-     print('''Categorias] Escolha uma das seguintes opções:
+     print('''\n[Categorias] Escolha uma das seguintes opções:
      1 - Listar todas as categorias
      2 - Adicionar nova categoria
      3 - Excluir categoria
@@ -51,7 +51,7 @@ class CategoryService:
       print(f'Erro ao exibir as categorias! - {e}')
       return
     
-    input('Pressione uma tecla para continuar...')
+    input('Pressione uma tecla para continuar... ')
 
   def add(self):
     print('\nAdicionando categoria...')
@@ -66,7 +66,7 @@ class CategoryService:
       print(f'Erro ao inserir categoria! - {e}')
       return
     
-    input('Pressione uma tecla para continuar...')
+    input('Pressione uma tecla para continuar... ')
 
   def remove(self):
     print('\nRemovendo categoria...')
@@ -80,7 +80,7 @@ class CategoryService:
       print(f'Error ao excluir a categoria! - {e}')
       return
     
-    input('Pressione uma tecla para continuar...')
+    input('Pressione uma tecla para continuar... ')
 
   def showById(self):
     print('\nCategoria por Id...')
@@ -96,7 +96,7 @@ class CategoryService:
       print(f'Erro ao exibir categoria! - {e}')
       return   
     
-    input('Pressione uma tecla para continuar...')
+    input('Pressione uma tecla para continuar...' )
 
   def showByName(self):
     print('\nCategoria por nome...')
@@ -112,6 +112,6 @@ class CategoryService:
       print(f'Erro ao exibir categoria! - {e}')
       return   
     
-    input('Pressione uma tecla para continuar...')
+    input('Pressione uma tecla para continuar... ')
 
 

@@ -14,8 +14,8 @@ class CategoryDAO:
         find = False
         for i in self.__categorys:
             if category_id == i.id:
-              index = self.__categorys.index(i.id)
-              del self.__categorys(index)
+              index = self.__categorys.index(i)
+              del self.__categorys[index]
               find = True
               break
         return find

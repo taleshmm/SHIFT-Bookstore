@@ -14,8 +14,8 @@ class EditorDAO:
         find = False
         for i in self.__editors:
           if editor_id == i.id:
-            index = self.__editors.index(i.id)
-            del self.__editors(index)
+            index = self.__editors.index(i)
+            del self.__editors[index]
             find = True
             break
         return find

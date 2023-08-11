@@ -35,11 +35,9 @@ The project is organized as follows:
 
 ## Next Steps
 
-This is the first version of the Python Bookstore Project. In the next steps, you may consider the following improvements:
+This is the first version of the Python Bookstore Project. In the next steps, I to go may consider the following improvements:
 
 - Implement data persistence using a database, such as SQLite or MySQL.
 - Create a more user-friendly interface, possibly with a GUI using a library like Tkinter.
 - Implement API routes using a framework like Flask or FastAPI.
 - Prepare the application for web deployment, considering services like Heroku or AWS.
-
-Enjoy exploring and enhancing this Python Bookstore Project! If you have any questions or suggestions, feel free to contribute to the project or get in touch with the development team.

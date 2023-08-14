@@ -1,6 +1,6 @@
-from author import Author
-from category import Category
-from editor import Editor
+from .author import Author
+from .category import Category
+from .editor import Editor
 
 class Book:
     def __init__(self, id: int, title: str, summary: str, year: int, pages: int, isbn: str, category: Category, editor: Editor, author: Author):

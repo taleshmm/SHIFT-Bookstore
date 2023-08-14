@@ -55,11 +55,11 @@ class BookService:
              print('Nenhum autor(a) encontrada!')
           for book in books:
              print(f'''ID: {book.id} | Título: {book.title.capitalize()} | Ano: {book.year} | Páginas: {book.pages}
-     Resumo: {book.summary}
-     Isbn: {book.isbn}
-     Categoria: {book.category.name.capitalize()}
-     Editora: {book.editor.name.capitalize()}
-     Autor(a): {book.author.name.capitalize()}''')
+   Resumo: {book.summary}
+   Isbn: {book.isbn}
+   Categoria: {book.category.name.capitalize()}
+   Editora: {book.editor.name.capitalize()}
+   Autor(a): {book.author.name.capitalize()}''')
        except Exception as e:
          print(f'Erro ao exibir as autores(as)! - {e}')
          return
@@ -94,7 +94,7 @@ class BookService:
         print('\nEditoras de livros: ')
         editors = self.__editor_dao.getAll()
         for ed in editors:
-          print(f'ID {ed.id} | Nome: {ed.name.capitalize()()}') 
+          print(f'ID {ed.id} | Nome: {ed.name.capitalize()}') 
         
         id = int(input('Digite o ID da editora: '))
         editor_select: Editor = self.__editor_dao.getById(id)
@@ -147,11 +147,11 @@ class BookService:
           book = self.__book_dao.getById(id)
           if book is not None:
             print(f'''ID: {book.id} | Título: {book.title.capitalize()} | Ano: {book.year} | Páginas: {book.pages}
-     Resumo: {book.summary}
-     Isbn: {book.isbn}
-     Categoria: {book.category.name.capitalize()}
-     Editora: {book.editor.name.capitalize()}
-     Autor(a): {book.author.name.capitalize()}''')
+   Resumo: {book.summary}
+   Isbn: {book.isbn}
+   Categoria: {book.category.name.capitalize()}
+   Editora: {book.editor.name.capitalize()}
+   Autor(a): {book.author.name.capitalize()}''')
           else:
              print('Livro não encontrado.')
        except Exception as e:
@@ -164,15 +164,15 @@ class BookService:
     def showByTitle(self):
       print('\nLivro por título...')
       try:
-         title = input('Digite o ID do autor(a): ').lower()
+         title = input('Digite o titulo do livro: ').lower()
          book = self.__book_dao.getByTitle(title)
          if book is not None:
           print(f'''ID: {book.id} | Título: {book.title.capitalize()} | Ano: {book.year} | Páginas: {book.pages}
-     Resumo: {book.summary}
-     Isbn: {book.isbn}
-     Categoria: {book.category.name.capitalize()}
-     Editora: {book.editor.name.capitalize()}
-     Autor(a): {book.author.name.capitalize()}''')
+   Resumo: {book.summary}
+   Isbn: {book.isbn}
+   Categoria: {book.category.name.capitalize()}
+   Editora: {book.editor.name.capitalize()}
+   Autor(a): {book.author.name.capitalize()}''')
          else:
            print('Livro não encontrado.')
       except Exception as e:

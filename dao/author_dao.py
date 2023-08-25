@@ -14,10 +14,10 @@ class AuthorDAO:
      find = False
      for i in self.__authors:
         if i.id == author_id:
-           index = self.__authors.index(i.id)
-           del self.__authors(index)
-           find = True
-           break
+          index = self.__authors.index(i)
+          del self.__authors[index]
+          find = True
+          break
      return find
   
   def getById(self, author_id) -> Author:
